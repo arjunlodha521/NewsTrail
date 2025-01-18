@@ -153,3 +153,44 @@ main {
 .news-source {
     margin-block: 12px;
 }
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--nav-bg-color);
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.theme-button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 8px 16px;
+}
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --nav-bg-color: #f3faff;
+}
+
+body[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --nav-bg-color: #1e1e1e;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+}
